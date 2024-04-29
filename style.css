@@ -1,0 +1,187 @@
+body {
+  background: rgba(244, 242, 240, 0.504) ;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: rgb(184, 204, 208);
+  padding: 3rem;
+  height: 50%;
+  width: 60%;
+  box-shadow: 0 1rem 3rem 1rem rgba(2, 43, 132, 0.15);
+  max-width: 30rem;
+}
+
+.todo-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  color: black;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: rgba(149, 241, 186, 0.566);
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  height: 3rem;
+  color: rgb(98, 4, 4);
+  text-align: center;
+}
+
+.input {
+  position: relative;
+  display: flex;
+}
+
+.input-field {
+  width: 100%;
+  border: 0.06rem solid #d2d2d2bf;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: var(--grey);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  margin-top: 8px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.3rem;
+}
+
+#todoList p {
+  display: flex;
+  gap: 1rem;
+  color: rgb(24, 2, 2);
+  align-items: center;
+}
+
+#todoList .disabled {
+  color: #8f98a8;
+}
+
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  border: 0.06rem solid rgb(29, 26, 26);
+  border-radius: 50%;
+  color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+  color: rgb(239, 235, 7);
+  background-color: green;
+  border: 0.06rem solid green;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.counter {
+  border: 0.06rem solid rgb(172, 135, 87);
+}
+
+.counter-container {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(68, 3, 88);
+}
+
+.counter-container p {
+  align-self: center;
+}
+
+.counter-container button {
+  border: none;
+  background-color: transparent;
+  color: rgb(68, 3, 88);
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  gap: 1.8rem;
+  background-color: rgb(234, 231, 226);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.made-by {
+  color: rgb(172, 103, 11);
+  font-size: 0.9rem;
+}
+
+
+.scroll {
+  height: 15rem;
+  scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 17, 211);
+  border-radius: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+  display: none;
+}
+
+.delete-task{
+  width: auto;
+  height: fit-content;
+  border: none;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: rgb(232, 192, 179);
+}
+
+.material-symbols-outlined{
+  align-items: center;
+}
